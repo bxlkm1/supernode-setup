@@ -1,0 +1,20 @@
+{
+  "NodePort": 20608,
+  "RESTPort": 20604,
+  "WSPort": 20605,
+  "RPCPort": 20606,
+  "RPCUser": "",
+  "RPCPass": "",
+  "RPCWhiteList": [
+    "0.0.0.0"
+  ],
+  "Loglevel": 1,
+  "LogsFolderSize": 0,
+  "PerLogFileSize": 0,
+  "DisableTxFilters": true,
+  "FoundationAddress": "8VYXVxKKSAxkmRrfmGpQR2Kc66XhG6m3ta",
+  "PayToAddr": "8VYXVxKKSAxkmRrfmGpQR2Kc66XhG6m3ta",
+  "AutoMining": false,
+  "MinerInfo": "ELA",
+  "InstantBlock": false
+}

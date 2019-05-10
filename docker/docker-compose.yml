@@ -1,0 +1,66 @@
+version : "3.5"
+
+services:
+  mainchain-node:
+    container_name: mainchain-node
+    image: cyberrepublic/elastos-mainchain-node:release_v0.3.2
+    volumes:
+      - ${PWD}/.volumes/mainchain-node:/root/ela/elastos
+      - ${PWD}/mainchain/config.json:/root/ela/config.json
+      - ${PWD}/mainchain/keystore.dat:/root/ela/keystore.dat
+    ports:
+      - 20333-20338:20333-20338
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:20334/api/v1/block/height"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - supernode
+    tty: true
+
+  arbitrator-node:
+    container_name: arbitrator-node
+    image: cyberrepublic/elastos-arbitrator-node:release_v0.1.1
+    volumes:
+      - ${PWD}/.volumes/arbitrator-node:/root/arbiter/elastos_arbiter
+      - ${PWD}/arbitrator/config.json:/root/arbiter/config.json
+      - ${PWD}/arbitrator/keystore.dat:/root/arbiter/keystore.dat
+    ports:
+      - 20536:20536
+      - 20538:20538
+    networks:
+      - supernode
+    tty: true
+
+  sidechain-did-node:
+    container_name: sidechain-did-node
+    image: cyberrepublic/elastos-sidechain-did-node:release_v0.1.2
+    volumes:
+      - ${PWD}/.volumes/sidechain-did-node:/root/did/elastos_did
+      - ${PWD}/sidechain/did/config.json:/root/did/config.json
+    ports:
+      - 20604-20608:20604-20608
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:20604/api/v1/block/height"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - supernode
+    tty: true
+
+  sidechain-token-node:
+    container_name: sidechain-token-node
+    image: cyberrepublic/elastos-sidechain-token-node:release_v0.1.2
+    volumes:
+      - ${PWD}/.volumes/sidechain-token-node:/root/token/elastos_token
+      - ${PWD}/sidechain/token/config.json:/root/token/config.json
+    ports:
+      - 20616-20618:20616-20618
+    networks:
+      - supernode
+    tty: true
+
+networks:
+  supernode:
