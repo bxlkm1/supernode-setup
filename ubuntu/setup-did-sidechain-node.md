@@ -20,54 +20,20 @@ mv mainnet_config.json.sample config.json
 - "WhiteIPList", "User" and "Pass" must all be met to access the RPC interface
 ```json
 {
-    "Configuration": {
-        "Magic": 2017002,
-        "SpvMagic": 2017001,
-        "SeedList": [
-            "node-mainnet-026.elastos.org:20608",
-            "node-mainnet-027.elastos.org:20608",
-            "node-mainnet-028.elastos.org:20608",
-            "node-mainnet-029.elastos.org:20608",
-            "node-mainnet-030.elastos.org:20608"
-        ],
-        "SpvSeedList": [
-            "node-mainnet-002.elastos.org:20338",
-            "node-mainnet-003.elastos.org:20338",
-            "node-mainnet-004.elastos.org:20338",
-            "node-mainnet-005.elastos.org:20338",
-            "node-mainnet-006.elastos.org:20338"
-        ],
-        "ExchangeRate": 1.0,
-        "MinCrossChainTxFee": 10000,
-        "HttpRestPort": 20604,
-        "HttpWsPort": 20605,
-        "HttpJsonPort": 20606,
-        "NodePort": 20608,
-        "PrintLevel": 1,
-        "MaxLogsSize": 0,
-        "MaxPerLogSize": 0,
-        "DisableTxFilters": true,
-        "MainChainFoundationAddress": "8VYXVxKKSAxkmRrfmGpQR2Kc66XhG6m3ta",
-        "FoundationAddress": "8VYXVxKKSAxkmRrfmGpQR2Kc66XhG6m3ta",
-        "PowConfiguration": {
-            "PayToAddr": "8VYXVxKKSAxkmRrfmGpQR2Kc66XhG6m3ta",
-            "AutoMining": false,
-            "MinerInfo": "ELA",
-            "MinTxFee": 100,
-            "InstantBlock": false
-        },
-        "RpcConfiguration": {
-            "User": "user",
-            "Pass": "pass",
-            "WhiteIPList": [
-                "0.0.0.0"
-            ]
-        }
-    }
+  "SPVDisableDNS": false,
+  "SPVPermanentPeers": [
+    "localhost:20338"
+  ],
+  "EnableRPC": true,
+  "RPCUser": "User",
+  "RPCPass": "Password",
+  "RPCWhiteList": [
+    "127.0.0.1"
+  ]
 }
 ```
 ### Run did node 
-1. The did node startup command needs to enter the password of the keystore.dat file
+1. The did node startup command
 ```bash
 # This will run the ./did program in the background and it sends all the 
 # outputted logs to /dev/null and only captures error logs to a file

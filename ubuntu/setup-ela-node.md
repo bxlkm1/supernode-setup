@@ -67,7 +67,7 @@ echo elastos | nohup ./ela > /dev/null 2>output &
 ./ela-cli info getnodestate
 # This assumes that RPC username and password are set with the following
 # and the HttpJsonPort is configured to be 20336
-./ela-cli info getnodestate --rpcport 20336 --rpcuser user --rpcpassword pass
+./ela-cli info getnodestate --rpcport 20336 --rpcuser user --rpcpassword password
 # You can also interact with RPC port directly without using ela-cli
 curl -X POST http://localhost:20336 -H 'Content-Type: application/json' \
 -d '{"method": "getnodestate"}'

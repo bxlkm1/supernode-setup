@@ -19,54 +19,17 @@ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.SideChain.Token/maste
 - "User" and "Pass" are the username and password for accessing the RPC interface. If set to "", you can access it without entering username and password
 - "WhiteIPList", "User" and "Pass" must all be met to access the RPC interface
 ```json
-{
-    "Configuration": {
-        "Magic": 2019004,
-        "SpvMagic": 2017001,
-        "SeedList": [
-            "node-mainnet-026.elastos.org:20618",
-            "node-mainnet-027.elastos.org:20618",
-            "node-mainnet-028.elastos.org:20618",
-            "node-mainnet-029.elastos.org:20618",
-            "node-mainnet-030.elastos.org:20618"
-        ],
-        "SpvSeedList": [
-            "node-mainnet-002.elastos.org:20338",
-            "node-mainnet-003.elastos.org:20338",
-            "node-mainnet-004.elastos.org:20338",
-            "node-mainnet-005.elastos.org:20338",
-            "node-mainnet-006.elastos.org:20338"
-        ],
-        "ExchangeRate": 1.0,
-        "MinCrossChainTxFee": 10000,
-        "HttpWsPort": 20615,
-        "HttpJsonPort": 20616,
-        "NodePort": 20618,
-        "PrintLevel": 1,
-        "MaxLogsSize": 0,
-        "MaxPerLogSize": 0,
-        "DisableTxFilters": true,
-        "MainChainFoundationAddress": "8VYXVxKKSAxkmRrfmGpQR2Kc66XhG6m3ta",
-        "FoundationAddress": "8VYXVxKKSAxkmRrfmGpQR2Kc66XhG6m3ta",
-        "PowConfiguration": {
-            "PayToAddr": "8VYXVxKKSAxkmRrfmGpQR2Kc66XhG6m3ta",
-            "AutoMining": false,
-            "MinerInfo": "ELA",
-            "MinTxFee": 100,
-            "InstantBlock": false
-        },
-        "RpcConfiguration": {
-            "User": "user",
-            "Pass": "pass" ,
-            "WhiteIPList":[
-                "0.0.0.0"
-            ]
-        }
-    }
-}
+  {
+    "SPVDisableDNS": false,
+    "SPVPermanentPeers": ["127.0.0.1:20338"],
+    "EnableRPC": true,
+    "RPCUser": "user",
+    "RPCPass": "password",
+    "RPCWhiteList": ["0.0.0.0"]
+  }
 ```
 ### Run token node 
-1. The token node startup command needs to enter the password of the keystore.dat file
+1. The token node startup command
 ```bash
 # This will run the ./token program in the background and it sends all the 
 # outputted logs to /dev/null and only captures error logs to a file
