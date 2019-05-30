@@ -25,10 +25,10 @@ mv mainnet_config.json.sample config.json
     "localhost:20338"
   ],
   "EnableRPC": true,
-  "RPCUser": "User",
-  "RPCPass": "Password",
+  "RPCUser": "user",
+  "RPCPass": "password",
   "RPCWhiteList": [
-    "127.0.0.1"
+    "0.0.0.0"
   ]
 }
 ```

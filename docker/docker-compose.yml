@@ -1,4 +1,4 @@
-version : "3.5"
+version : "3"
 
 services:
   mainchain-node:
@@ -15,20 +15,6 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
-    networks:
-      - supernode
-    tty: true
-
-  arbitrator-node:
-    container_name: arbitrator-node
-    image: cyberrepublic/elastos-arbitrator-node:release_v0.1.1
-    volumes:
-      - ${PWD}/.volumes/arbitrator-node:/root/arbiter/elastos_arbiter
-      - ${PWD}/arbitrator/config.json:/root/arbiter/config.json
-      - ${PWD}/arbitrator/keystore.dat:/root/arbiter/keystore.dat
-    ports:
-      - 20536:20536
-      - 20538:20538
     networks:
       - supernode
     tty: true

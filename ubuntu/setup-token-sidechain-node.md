@@ -19,14 +19,18 @@ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.SideChain.Token/maste
 - "User" and "Pass" are the username and password for accessing the RPC interface. If set to "", you can access it without entering username and password
 - "WhiteIPList", "User" and "Pass" must all be met to access the RPC interface
 ```json
-  {
-    "SPVDisableDNS": false,
-    "SPVPermanentPeers": ["127.0.0.1:20338"],
-    "EnableRPC": true,
-    "RPCUser": "user",
-    "RPCPass": "password",
-    "RPCWhiteList": ["0.0.0.0"]
-  }
+{
+  "SPVDisableDNS": false,
+  "SPVPermanentPeers": [
+    "localhost:20338"
+  ],
+  "EnableRPC": true,
+  "RPCUser": "user",
+  "RPCPass": "password",
+  "RPCWhiteList": [
+    "0.0.0.0"
+  ]
+}
 ```
 ### Run token node 
 1. The token node startup command

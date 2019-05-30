@@ -1,20 +1,13 @@
 {
   "Configuration": {
-    "HttpInfoPort": 20333,
-    "HttpRestPort": 20334,
-    "HttpWsPort": 20335,
-    "HttpJsonPort": 20336,
-    "NodePort": 20338,
     "DPoSConfiguration": {
       "EnableArbiter": true,
-      "IPAddress": "127.0.0.1"
+      "IPAddress": "192.168.1.23"
     },
     "RpcConfiguration": {
-      "User": "",
-      "Pass": "",
-      "WhiteIPList": [
-        "0.0.0.0"
-      ]
+      "User": "user",
+      "Pass": "password",
+      "WhiteIPList": ["0.0.0.0"]
     }
   }
 }
