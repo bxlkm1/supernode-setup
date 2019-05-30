@@ -31,10 +31,19 @@
 - Read [Guide to setting up Elastos Carrier node](./ubuntu/setup-elastos-carrier-node.md) for more info
 
 ## Setup Nodes using docker(the easiest solution)
-- TBD
 
 ### Setup docker environment
-- TBD
+- Read [Guide to setting up docker environment](./docker/setup-docker-environment.md) for more info
 
 ### Run docker-compose up
-- TBD
+```bash
+cd docker
+docker-compose up --remove-orphans --build --force-recreate -d
+```
+
+### Things to note about docker containers
+- All your container data for ela, did and token are saved under docker/.volumes/supernode-setup. If you would like to change this, be sure to modify your docker/docker-compose.yml appropriately
+- You can check the logs of the running container by doing something like:
+    ```
+    docker container logs -f mainchain-node
+    ```

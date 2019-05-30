@@ -40,7 +40,7 @@ mv dpos_config.json.sample config.json
     "Configuration": {
       "DPoSConfiguration": {
         "EnableArbiter": true,
-        "IPAddress": "192.168.1.23"
+        "IPAddress": "127.0.0.1"
       },
       "RpcConfiguration": {
         "User": "user",

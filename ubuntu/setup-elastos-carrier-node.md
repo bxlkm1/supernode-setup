@@ -12,7 +12,7 @@ wget https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/
 sudo dpkg -i elastos-carrier-bootstrap-5.2.2da37f-linux-x86_64-Debug.deb
 ```
 ### Modify ela-bootstrapd configuration file: `/etc/elastos/bootstrapd.conf`
-- Update bootstrap nodes list under the section "bootstrap_nodes" according your deployment(to connect to elastos carrier nodes)
+- Update bootstrap nodes list under the section "bootstrap_nodes" if you need to(so you can connect to elastos carrier nodes)
 - Set external IP to turn server explicitly: Some Linux VPS servers, for example, servers from AWS, can't fetch public IP address directly by itself, so you have manually update the public IP address of item external_ip under the section "turn"
 ### Check ela-bootstrapd node status
 ```bash
