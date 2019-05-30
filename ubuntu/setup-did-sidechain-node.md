@@ -1,6 +1,6 @@
 ### Create a directory to work off of: `~/node/did`:
 ```bash
-mkdir ~/node/did
+mkdir -p ~/node/did
 cd ~/node/did
 ```
 ### Download did binary at [https://github.com/elastos/Elastos.ELA.SideChain.ID/releases/download/v0.1.2/did](https://github.com/elastos/Elastos.ELA.SideChain.ID/releases/download/v0.1.2/did) and copy to `~/node/did/did`
@@ -51,4 +51,23 @@ curl -X POST http://localhost:20606 -H 'Content-Type: application/json' \
 curl --user user:pass -X POST http://localhost:20606 -H 'Content-Type: application/json' -d '{"method": "getnodestate"}'
 ```
 3. You can check out other RPC commands by looking at the documentation at [https://github.com/elastos/Elastos.ELA.SideChain.ID/blob/master/docs/jsonrpc_apis.md](https://github.com/elastos/Elastos.ELA.SideChain.ID/blob/master/docs/jsonrpc_apis.md)
+
 4. The logs for the did node program is located at elastos_did/logs directory
+
+```
+cat elastos_did/logs/2019-05-29_19.23.13.log | head -10
+```
+
+Should return something like 
+```
+2019-05-29 19:23:13.336 [INF] ELAD /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/main.go:58: Node version: v0.1.1-10-gadfa
+2019-05-29 19:23:13.338 [INF] ELAD /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/main.go:59: go version go1.11.5 linux/amd64
+2019-05-29 19:23:13.338 [INF] ELAD /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/main.go:64: 1. BlockChain init
+2019-05-29 19:23:13.352 [INF] ELAD /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/main.go:73: 2. SPV module init
+2019-05-29 19:23:13.400 [INF] SPVS /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/vendor/github.com/elastos/Elastos.ELA.SPV/sdk/service.go:464: SPV service started...
+2019-05-29 19:23:13.400 [INF] ELAD /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/main.go:128: 3. Start the P2P networks
+2019-05-29 19:23:13.403 [INF] ELAD /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/main.go:143: 4. --Initialize pow service
+2019-05-29 19:23:13.403 [INF] ELAD /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/main.go:164: 5. --Start the RPC service
+2019-05-29 19:23:13.405 [INF] SPVS /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/vendor/github.com/elastos/Elastos.ELA.SPV/sync/manager.go:244: New valid peer 127.0.0.1:10115 (outbound)
+2019-05-29 19:23:13.406 [INF] SPVS /home/kpachhai/dev/src/github.com/elastos/Elastos.ELA.SideChain.ID/vendor/github.com/elastos/Elastos.ELA.SPV/sync/manager.go:197: Syncing to block height 1181 from peer 127.0.0.1:10115
+```

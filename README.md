@@ -1,12 +1,10 @@
-# THIS GUIDE IS A WORK IN PROGRESS AND SHOULD NOT BE TAKEN AS AN OFFICIAL GUIDE
-
 ## NOTE: This repo serves as an example of how to set up a supernode and actual configurations may vary depending on your own supernode setup. This repo only exists to show the absolute bare minimum of running a supernode. There are also other ways of setting up a supernode which are not explored here
 
 ## Supernode Classification
 1. Ela mainchain node
 2. DID sidechain node
 3. Token sidechain node
-4. Elastos Carrier node
+4. Elastos Carrier Bootstrap node
 
 **Minimum Requirements**
 - System: `Ubuntu 14.04 LTS 64-bit`
@@ -33,7 +31,10 @@
 - Read [Guide to setting up Elastos Carrier node](./ubuntu/setup-elastos-carrier-node.md) for more info
 
 ## Setup Nodes using docker(the easiest solution)
+- TBD
 
 ### Setup docker environment
+- TBD
 
 ### Run docker-compose up
+- TBD
