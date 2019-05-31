@@ -93,3 +93,23 @@ wget https://github.com/elastos/Elastos.ELA/releases/download/v0.3.2/ela-cli
 ### Make changes to `carrier/bootstrapd.conf`
 - Update bootstrap nodes list under the section "bootstrap_nodes" if you need to(so you can connect to elastos carrier nodes)
 - Set external IP to turn server explicitly: Some Linux VPS servers, for example, servers from AWS, can't fetch public IP address directly by itself, so you have manually update the public IP address of item external_ip under the section "turn"
+
+### Make changes to `docker-compose.yml`
+- Since you have your own keystore.dat that you need for running your main chain node, you need to make some changes to docker-compose.yml file so it's correctly configured when it's run
+- Under "image: cyberrepublic/elastos-mainchain-node:release_v0.3.2", add the following:
+```bash
+version : "3"
+
+services:
+  mainchain-node:
+    container_name: mainchain-node
+    image: cyberrepublic/elastos-mainchain-node:release_v0.3.2
+    ## This is where you enter your own config
+    entrypoint:
+      - "/bin/sh"
+      - "-c"
+      - "./ela -p yourpasswordhere"
+    ## Leave the rest as it is
+```
+- Above where it says "yourpasswordhere", you need to enter your own password you set when creating your keystore.dat file so your ela program is run successfully
+- Also, if you want to change the volumes or anything else, you can make changes to docker-compose.yml as you wish
