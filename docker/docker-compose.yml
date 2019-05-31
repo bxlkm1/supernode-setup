@@ -5,9 +5,9 @@ services:
     container_name: mainchain-node
     image: cyberrepublic/elastos-mainchain-node:release_v0.3.2
     volumes:
-      - ${PWD}/.volumes/supernode-setup/mainchain-node:/root/ela/elastos
-      - ${PWD}/ela/config.json:/root/ela/config.json
-      - ${PWD}/ela/keystore.dat:/root/ela/keystore.dat
+      - ${PWD}/.volumes/supernode-setup/mainchain-node:/ela/elastos
+      - ${PWD}/ela/config.json:/ela/config.json
+      - ${PWD}/ela/keystore.dat:/ela/keystore.dat
     ports:
       - 20333-20338:20333-20338
     healthcheck:
@@ -23,8 +23,8 @@ services:
     container_name: sidechain-did-node
     image: cyberrepublic/elastos-sidechain-did-node:release_v0.1.2
     volumes:
-      - ${PWD}/.volumes/supernode-setup/sidechain-did-node:/root/did/elastos_did
-      - ${PWD}/did/config.json:/root/did/config.json
+      - ${PWD}/.volumes/supernode-setup/sidechain-did-node:/did/elastos_did
+      - ${PWD}/did/config.json:/did/config.json
     ports:
       - 20604-20608:20604-20608
     healthcheck:
@@ -40,10 +40,10 @@ services:
     container_name: sidechain-token-node
     image: cyberrepublic/elastos-sidechain-token-node:release_v0.1.2
     volumes:
-      - ${PWD}/.volumes/supernode-setup/sidechain-token-node:/root/token/elastos_token
-      - ${PWD}/token/config.json:/root/token/config.json
+      - ${PWD}/.volumes/supernode-setup/sidechain-token-node:/token/elastos_token
+      - ${PWD}/token/config.json:/token/config.json
     ports:
-      - 20616-20618:20616-20618
+      - 20614-20618:20614-20618
     networks:
       - supernode
     tty: true
