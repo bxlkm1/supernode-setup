@@ -9,7 +9,7 @@ services:
       - ${PWD}/ela/config.json:/ela/config.json
       - ${PWD}/ela/keystore.dat:/ela/keystore.dat
     ports:
-      - 20333-20338:20333-20338
+      - 20333-20339:20333-20339
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:20334/api/v1/block/height"]
       interval: 30s
