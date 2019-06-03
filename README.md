@@ -1,4 +1,6 @@
-## NOTE: This repo serves as an example of how to set up a supernode and actual configurations may vary depending on your own supernode setup. This repo only exists to show the absolute bare minimum of running a supernode. There are also other ways of setting up a supernode which are not explored here
+## NOTE: This repo serves as an example of how to set up a supernode and actual configurations may vary depending on your own supernode setup. This repo only exists to show the absolute bare minimum of running a supernode. There are also other ways of setting up a supernode which are not explored here. 
+
+## DISCLAIMER: Elastos Foundation does not take responsibility in the actual setting up of supernodes
 
 ## Supernode Classification
 1. Ela mainchain node
@@ -13,8 +15,7 @@
 - Hard drive: `40GB or more`
 - Network: `Standard network with accessible public IP or domain name`
 - DposPort[default: 20339]: `The firewall needs to open this port to the entire network`
-- System permissions and dependencies: `To be added`
-- python3 environment (Optional: Used to deploy the node monitoring and alarm routine)
+- System permissions: `Need sudo(root) privileges`
 
 ## Setup Nodes from scratch(the most customizable solution)
 

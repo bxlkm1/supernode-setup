@@ -3,7 +3,7 @@ version : "3"
 services:
   mainchain-node:
     container_name: mainchain-node
-    image: cyberrepublic/elastos-mainchain-node:release_v0.3.2
+    image: cyberrepublic/elastos-mainchain-node:v0.3.2
     volumes:
       - ${PWD}/.volumes/supernode-setup/mainchain-node:/ela/elastos
       - ${PWD}/ela/config.json:/ela/config.json
@@ -21,7 +21,7 @@ services:
 
   sidechain-did-node:
     container_name: sidechain-did-node
-    image: cyberrepublic/elastos-sidechain-did-node:release_v0.1.2
+    image: cyberrepublic/elastos-sidechain-did-node:v0.1.2
     volumes:
       - ${PWD}/.volumes/supernode-setup/sidechain-did-node:/did/elastos_did
       - ${PWD}/did/config.json:/did/config.json
@@ -38,7 +38,7 @@ services:
 
   sidechain-token-node:
     container_name: sidechain-token-node
-    image: cyberrepublic/elastos-sidechain-token-node:release_v0.1.2
+    image: cyberrepublic/elastos-sidechain-token-node:v0.1.2
     volumes:
       - ${PWD}/.volumes/supernode-setup/sidechain-token-node:/token/elastos_token
       - ${PWD}/token/config.json:/token/config.json
@@ -50,7 +50,7 @@ services:
 
   carrier-bootstrap-node:
     container_name: carrier-bootstrap-node
-    image: cyberrepublic/elastos-carrier-bootstrap-node:latest
+    image: cyberrepublic/elastos-carrier-bootstrap-node:release-v5.2.3
     volumes:
       - ${PWD}/carrier/bootstrapd.conf:/home/elauser/bootstrapd.conf
     ports:

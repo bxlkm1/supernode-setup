@@ -28,7 +28,7 @@ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.SideChain.Token/maste
   "RPCUser": "user",
   "RPCPass": "password",
   "RPCWhiteList": [
-    "0.0.0.0"
+    "127.0.0.1"
   ]
 }
 ```

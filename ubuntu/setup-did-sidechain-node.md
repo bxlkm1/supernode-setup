@@ -28,7 +28,7 @@ mv mainnet_config.json.sample config.json
   "RPCUser": "user",
   "RPCPass": "password",
   "RPCWhiteList": [
-    "0.0.0.0"
+    "127.0.0.1"
   ]
 }
 ```

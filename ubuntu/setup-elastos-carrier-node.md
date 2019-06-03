@@ -3,16 +3,16 @@
 mkdir -p ~/node/carrier
 cd ~/node/carrier
 ```
-### Download .deb package for "ela-bootstrapd" at [https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.2/elastos-carrier-bootstrap-5.2.2da37f-linux-x86_64-Debug.deb](https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.2/elastos-carrier-bootstrap-5.2.2da37f-linux-x86_64-Debug.deb) and copy to `~/node/carrier`
+### Download .deb package for "ela-bootstrapd" at [https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.717741-linux-x86_64-Debug.deb](https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.717741-linux-x86_64-Debug.deb) and copy to `~/node/carrier`
 ```bash
-wget https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.2/elastos-carrier-bootstrap-5.2.2da37f-linux-x86_64-Debug.deb
+wget https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.717741-linux-x86_64-Debug.deb
 ```
 ### Install the .deb package locally and run the ela-bootstrapd service
 ```bash
-sudo dpkg -i elastos-carrier-bootstrap-5.2.2da37f-linux-x86_64-Debug.deb
+sudo dpkg -i elastos-carrier-bootstrap-5.2.717741-linux-x86_64-Debug.deb
 ```
 ### Modify ela-bootstrapd configuration file: `/etc/elastos/bootstrapd.conf`
-- Update bootstrap nodes list under the section "bootstrap_nodes" if you need to(so you can connect to elastos carrier nodes)
+- Update bootstrap nodes list under the section "bootstrap_nodes" if you need to(the default bootstrap nodes are already in the config file but you could add more if you want to)
 - Set external IP to turn server explicitly: Some Linux VPS servers, for example, servers from AWS, can't fetch public IP address directly by itself, so you have manually update the public IP address of item external_ip under the section "turn"
 ### Check ela-bootstrapd node status
 ```bash

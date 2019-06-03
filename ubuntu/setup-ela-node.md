@@ -45,7 +45,7 @@ mv dpos_config.json.sample config.json
       "RpcConfiguration": {
         "User": "user",
         "Pass": "password",
-        "WhiteIPList": ["0.0.0.0"]
+        "WhiteIPList": ["127.0.0.1"]
       }
     }
 }
@@ -139,15 +139,4 @@ Should output something like:
 CURRENT ARBITERS
 DUTYINDEX: 1
 INDEX                                                          PUBLICKEY ONDUTY 
------ ------------------------------------------------------------------ ------
-1     02677bd3dc8ea4a9ab22f8ba5c5348fc1ce4ba5f1810e8ec8603d5bd927b630b3e   true
-2     0232d3172b7fc139b7605b83cd27e3c6f64fde1e71da2489764723639a6d40b5b9  false
------ ------------------------------------------------------------------ ------
-NEXT ARBITERS
-INDEX                                                          PUBLICKEY
------ ------------------------------------------------------------------
-1     0353197d11802fe0cd5409f064822b896ceaa675ea596287f1e5ce009be7684f08
-2     032e74c386af5d672cb196334f2b6ee6451d61f2257f0837ea7af340ef4dea4e1a
-3     02eafcd36390b064431b82a4b2934f6d93fddfcfa4a86602b2ae32d858b8d3bcd7
-4     0386206d1d442f5c8ddcc9ae45ab85d921b6ade3a184f43b7ccf6de02f3ca0b450
 ```
