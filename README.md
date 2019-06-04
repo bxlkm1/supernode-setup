@@ -34,17 +34,31 @@
 ## Setup Nodes using docker(the easiest solution)
 
 ### Setup docker environment
+NOTE: Please keep in mind that the docker images are not made by Elastos Foundation but through the CR community and as such, Elastos Foundation does not take responsibility in the operation of these docker images available on Cyber Republic repository at [https://cloud.docker.com/u/cyberrepublic/repository/list](https://cloud.docker.com/u/cyberrepublic/repository/list). These docker images are built tools available at [https://github.com/cyber-republic/elastos-privnet/tree/v0.3](https://github.com/cyber-republic/elastos-privnet/tree/v0.3)
+
 - Read [Guide to setting up docker environment](./docker/setup-docker-environment.md) for more info
 
 ### Run docker-compose up
-```bash
-cd docker
-docker-compose up --remove-orphans --build --force-recreate -d
-```
+    ```bash
+    cd docker;
+    docker-compose up --remove-orphans --build --force-recreate -d
+    ```
 
 ### Things to note about docker containers
 - All your container data for ela, did and token are saved under docker/.volumes/supernode-setup. If you would like to change this, be sure to modify your docker/docker-compose.yml appropriately
-- You can check the logs of the running container by doing something like:
+- You can check the logs of the running mainchain node container by doing something like:
     ```
     docker container logs -f mainchain-node
+    ```
+- You can check the logs of the running DID sidechain node container by doing something like:
+    ```
+    docker container logs -f sidechain-did-node
+    ```
+- You can check the logs of the running Token sidechain node container by doing something like:
+    ```
+    docker container logs -f sidechain-token-node
+    ```
+- You can check the logs of the running Carrier bootstrap node container by doing something like:
+    ```
+    docker container logs -f carrier-bootstrap-node
     ```
