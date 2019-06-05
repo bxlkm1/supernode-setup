@@ -55,7 +55,7 @@
         "User": "User",
         "Pass": "Password",
         "WhiteIPList": [
-          "127.0.0.1"
+          "0.0.0.0"
         ]
       }
     }
@@ -78,7 +78,7 @@
     "RPCUser": "User",
     "RPCPass": "Password",
     "RPCWhiteList": [
-      "127.0.0.1"
+      "0.0.0.0"
     ]
   }
   ```
@@ -99,7 +99,7 @@
     "RPCUser": "User",
     "RPCPass": "Password",
     "RPCWhiteList": [
-      "127.0.0.1"
+      "0.0.0.0"
     ]
   }
   ```

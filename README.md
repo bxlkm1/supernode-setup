@@ -44,7 +44,7 @@ NOTE: Please keep in mind that the docker images are not made by Elastos Foundat
     docker-compose up --remove-orphans --build --force-recreate -d
     ```
 
-### Things to note about docker containers
+### Check logs from docker containers
 - All your container data for ela, did and token are saved under docker/.volumes/supernode-setup. If you would like to change this, be sure to modify your docker/docker-compose.yml appropriately
 - You can check the logs of the running mainchain node container by doing something like:
     ```
@@ -61,4 +61,18 @@ NOTE: Please keep in mind that the docker images are not made by Elastos Foundat
 - You can check the logs of the running Carrier bootstrap node container by doing something like:
     ```
     docker container logs -f carrier-bootstrap-node
+    ```
+
+### Verify everything is working
+- You can check the node state for your mainchain node by doing something like:
+    ```
+    curl -X POST http://localhost:20336 -H 'Content-Type: application/json' -d '{"method": "getnodestate"}'
+    ```
+- You can check the node state for your DID sidechain node by doing something like:
+    ```
+    curl -X POST http://localhost:20606 -H 'Content-Type: application/json' -d '{"method": "getnodestate"}'
+    ```
+- You can check the node state for your Token sidechain node by doing something like:
+    ```
+    curl -X POST http://localhost:20616 -H 'Content-Type: application/json' -d '{"method": "getnodestate"}'
     ```
