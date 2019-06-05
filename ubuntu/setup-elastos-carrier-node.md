@@ -4,14 +4,14 @@
    cd ~/node/carrier
    ```
 
-### Download .deb package for "ela-bootstrapd" at [https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.717741-linux-x86_64-Debug.deb](https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.717741-linux-x86_64-Debug.deb) and copy to `~/node/carrier`
+### Download .deb package for "ela-bootstrapd" at [https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.623351-linux-x86_64-Debug.deb](https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.623351-linux-x86_64-Debug.deb) and copy to `~/node/carrier`
    ```bash
-   wget https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.717741-linux-x86_64-Debug.deb
+   wget https://github.com/elastos/Elastos.NET.Carrier.Bootstrap/releases/download/release-v5.2.3/elastos-carrier-bootstrap-5.2.623351-linux-x86_64-Debug.deb
    ```
 
 ### Install the .deb package locally and run the ela-bootstrapd service
    ```bash
-   sudo dpkg -i elastos-carrier-bootstrap-5.2.717741-linux-x86_64-Debug.deb
+   sudo dpkg -i elastos-carrier-bootstrap-5.2.623351-linux-x86_64-Debug.deb
    ```
 
 ### Modify ela-bootstrapd configuration file: `/etc/elastos/bootstrapd.conf`
