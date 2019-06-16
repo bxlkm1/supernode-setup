@@ -17,6 +17,7 @@ Elastos Foundation does not take responsibility in the actual setting up of supe
 - Hard drive: `40GB or more`
 - Network: `Standard network with accessible public IP or domain name`
 - DposPort[default: 20339]: `The firewall needs to open this port to the entire network`
+- NodePort[default: 20338]: `The firewall needs to open this port to the entire network`
 - System permissions: `Need sudo(root) privileges`
 
 ## Setup Nodes using automated script
