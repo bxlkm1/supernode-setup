@@ -24,7 +24,7 @@ Elastos Foundation does not take responsibility in the actual setting up of supe
 ### Installation
 - Download the compressed package for the node
     ```
-    wget https://download.elastos.org/supernode/elastos-supernode-20190609-alpha.tgz
+    wget https://download.elastos.org/supernode/elastos-supernode-20190616-alpha.tgz
     ```
 
 - Verify the compressed package for the node is correct

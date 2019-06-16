@@ -4,21 +4,21 @@
   cd ~/node/ela
   ```
 
-### Download ela binary at [https://github.com/elastos/Elastos.ELA/releases/download/v0.3.2/ela](https://github.com/elastos/Elastos.ELA/releases/download/v0.3.2/ela) and copy to `~/node/ela/ela`
+### Download ela binary at [https://github.com/elastos/Elastos.ELA/releases/download/v0.3.3/ela](https://github.com/elastos/Elastos.ELA/releases/download/v0.3.3/ela) and copy to `~/node/ela/ela`
   ```bash
-  wget https://github.com/elastos/Elastos.ELA/releases/download/v0.3.2/ela;
+  wget https://github.com/elastos/Elastos.ELA/releases/download/v0.3.3/ela;
   chmod +x ela
   ```
 
-### Download ela-cli binary at [https://github.com/elastos/Elastos.ELA/releases/download/v0.3.2/ela-cli](https://github.com/elastos/Elastos.ELA/releases/download/v0.3.2/ela-cli) and copy to `~/node/ela/ela-cli`
+### Download ela-cli binary at [https://github.com/elastos/Elastos.ELA/releases/download/v0.3.3/ela-cli](https://github.com/elastos/Elastos.ELA/releases/download/v0.3.3/ela-cli) and copy to `~/node/ela/ela-cli`
   ```bash
-  wget https://github.com/elastos/Elastos.ELA/releases/download/v0.3.2/ela-cli;
+  wget https://github.com/elastos/Elastos.ELA/releases/download/v0.3.3/ela-cli;
   chmod +x ela-cli
   ```
 
-### Download default configuration file at [https://raw.githubusercontent.com/elastos/Elastos.ELA/release_v0.3.2/docs/dpos_config.json.sample](https://raw.githubusercontent.com/elastos/Elastos.ELA/release_v0.3.2/docs/dpos_config.json.sample) and copy to `~/node/ela/config.json`
+### Download default configuration file at [https://raw.githubusercontent.com/elastos/Elastos.ELA/v0.3.3/docs/dpos_config.json.sample](https://raw.githubusercontent.com/elastos/Elastos.ELA/v0.3.3/docs/dpos_config.json.sample) and copy to `~/node/ela/config.json`
 ```bash
-wget https://raw.githubusercontent.com/elastos/Elastos.ELA/release_v0.3.2/docs/dpos_config.json.sample;
+wget https://raw.githubusercontent.com/elastos/Elastos.ELA/v0.3.3/docs/dpos_config.json.sample;
 mv dpos_config.json.sample config.json
 ```
 
