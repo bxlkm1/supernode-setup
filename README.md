@@ -168,6 +168,20 @@ node/node.sh is the main script for running and maintaining nodes. You can use t
     carrier: Stopped
     ```
 
+### Re-activate your supernode
+If your ela node ever becomes inactive for whatever reason, you can re-activate doing the following:
+- Step 1: Change to your ela node directory
+- Step 2: Build a transaction to re-activate your node
+  ```
+  ./ela-cli wallet buildtx activate --nodepublickey your_own_node_key
+  ```
+- Step 3: Send a transaction to re-activate your node
+  ```
+  ./ela-cli wallet sendtx -f ready_to_send.txn --rpcuser your_own_username --rpcpassword your_own_password
+  ```
+
+NOTE: Replace your_own_node_key, your_own_username and your_own_password with your own info according to your configuration
+
 ## Setup Nodes from scratch
 
 ### Ela mainchain node
