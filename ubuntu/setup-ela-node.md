@@ -170,3 +170,6 @@ mv dpos_config.json.sample config.json
   ./ela-cli wallet sendtx -f ready_to_send.txn --rpcuser your_own_username --rpcpassword your_own_password
   ```
 - NOTE: Replace your_own_node_key, your_own_username and your_own_password with your own info according to your configuration
+
+### Upgrade your ela node
+- There will be updates to the ela node in which case you will need to upgrade them accordingly. You can find the latest releases at [https://github.com/elastos/Elastos.ELA/tree/master/docs/release-notes](https://github.com/elastos/Elastos.ELA/tree/master/docs/release-notes)

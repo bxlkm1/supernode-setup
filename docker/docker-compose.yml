@@ -3,7 +3,7 @@ version : "3"
 services:
   mainchain-node:
     container_name: mainchain-node
-    image: cyberrepublic/elastos-mainchain-node:v0.3.3
+    image: cyberrepublic/elastos-mainchain-node:v0.3.4
     volumes:
       - ${PWD}/.volumes/supernode-setup/mainchain-node:/ela/elastos
       - ${PWD}/ela/config.json:/ela/config.json

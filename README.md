@@ -199,7 +199,7 @@ NOTE: Replace your_own_node_key, your_own_username and your_own_password with yo
 ## Setup Nodes using docker
 
 ### Setup docker environment
-NOTE: Please keep in mind that the docker images are not made by Elastos Foundation but through the CR community and as such, Elastos Foundation does not take responsibility in the operation of these docker images available on Cyber Republic repository at [https://cloud.docker.com/u/cyberrepublic/repository/list](https://cloud.docker.com/u/cyberrepublic/repository/list). These docker images are built tools available at [https://github.com/cyber-republic/elastos-privnet/tree/v0.3](https://github.com/cyber-republic/elastos-privnet/tree/v0.3)
+NOTE: Please keep in mind that the docker images are not made by Elastos Foundation but through the CR community and as such, Elastos Foundation does not take responsibility in the operation of these docker images available on Cyber Republic repository at [https://cloud.docker.com/u/cyberrepublic/repository/list](https://cloud.docker.com/u/cyberrepublic/repository/list). These docker images are built tools available at [https://github.com/cyber-republic/elastos-privnet/tree/v0.4](https://github.com/cyber-republic/elastos-privnet/tree/v0.4)
 
 - Read [Guide to setting up docker environment](./docker/setup-docker-environment.md) for more info
 
